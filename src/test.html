@@ -1,0 +1,36 @@
+<script>
+	function highAndLow(numbers) {
+		let maxValue = Number.MAX_SAFE_INTEGER;
+		let minValue = Number.MIN_SAFE_INTEGER;
+
+		let arrayofNum = numbers.split(' ').map(arr => {
+			return parseInt(arr);
+		});
+
+		for (let i = 0; i < arrayofNum.length; i++) {
+
+			if (arrayofNum[i] > minValue) {
+				minValue = arrayofNum[i]
+				console.log(maxValue)
+			}
+			if (arrayofNum[i] < maxValue) {
+				maxValue = arrayofNum[i]
+				console.log(maxValue)
+			}
+
+		};
+
+
+		return `======${minValue} ${maxValue} ============`
+	}
+
+	let result = highAndLow(
+		"-3082 -4026 -1820 -3488 -3666 -1198 -2406 -2055 -2309 -3236 -3247 -2360 -2228 -1762 -3349 -2243 -1078 -1012 -3129 -2393 -1511"
+		);
+	console.log(result);
+
+	// highAndLow("1 2 3 4 5");  // return "5 1"
+	//highAndLow("1 2 -3 4 5"); // return "5 -3"
+	//highAndLow("1 9 3 4 -5"); // return "9 -5"
+	//expected '5e-324 -4026' to equal '-1012 -4026'
+</script>

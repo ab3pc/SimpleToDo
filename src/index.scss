@@ -1,0 +1,140 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 10px;
+}
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin:0 auto;
+	.todo {
+		position: absolute;
+			overflow: auto;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: calc(100vw - 100px);
+		height: calc(100vh - 100px);
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-shadow: 1px 1px 7px 2px #ccc;
+		&__title {
+			margin-top: 15px;
+			font-size: 20px;
+			color: #6c6c6c;
+			text-align: center;
+		}
+	&__sort {
+		
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		&-item {
+			margin-right: 5px;
+			
+			span {
+				padding: 5px 10px;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: all 0.2s linear;
+				&:hover {
+					background-color: #ccc;
+					color: #fff;
+				}
+				&:focus {
+					background-color: rgb(133, 130, 130);
+					
+				}
+			
+				&.active {
+					background-color: #ccc;
+					color: #fff;
+				}
+			}
+		}
+
+
+		input {
+			display: inline-block;
+			margin-right: 5px;
+			&:checked {
+				background-color: green;
+				color: green;
+			}
+		}
+		
+	}
+	&__items {
+		margin-top: 20px;
+	}
+	&__content {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	&__input {
+		cursor: pointer;
+		margin-top: 20px;
+		&-add {
+			opacity: 0.4;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			svg {
+				margin-right: 10px;
+			}
+		}
+		input {
+			margin-right: 10px;
+			font-size: 15px;
+			width: 300px;
+			border:1px solid #ccc;
+			border-radius: 5px;
+			padding:10px;
+		}
+		button {
+			cursor: pointer;
+			font-size: 15px;
+			padding: 10px;
+			color: #fff;
+			border-radius: 5px;
+			border: none;
+			background-color: green;
+			&:hover {
+				background-color: darken(green, 5%);
+			}
+			&:active {
+				background-color: darken(green, 10%);
+			}
+		}
+		
+	}
+	}
+	
+}
