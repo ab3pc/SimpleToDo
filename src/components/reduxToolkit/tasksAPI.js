@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const tasksApi = createApi({
 	reducerPath: 'tasksApi', //в каком месте в редаксе данные будут лежать
 	tagTypes: ["Tasks"],
-	baseQuery: fetchBaseQuery({baseUrl: 'https://ab3pc-todo.herokuapp.com/'}), //надстройка над простым Fetch, можно и axios
+	baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:3001/'}), //надстройка над простым Fetch, можно и axios
 	endpoints: (builder) => ({
 		getAllTasks: builder.query({
 			query: (category) => `tasks?${category !== null ? `checked=${category}` : ""}`, 
