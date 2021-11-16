@@ -1,1 +1,61 @@
-{}
+{
+  "tasks": [
+    {
+      "text": "ToDo with Hooks",
+      "checked": true,
+      "date": "2021-11-9 16:13",
+      "id": 18
+    },
+    {
+      "text": "Refactoring with Redux Toolkit",
+      "checked": true,
+      "date": "2021-11-12 17:1",
+      "id": 19
+    },
+    {
+      "text": "Refactoring with RTK QUERY",
+      "checked": true,
+      "date": "2021-11-12 17:1",
+      "id": 21
+    },
+    {
+      "text": "Create SPA with cart",
+      "checked": true,
+      "date": "2021-11-12 17:15",
+      "id": 22
+    },
+    {
+      "text": "test",
+      "checked": false,
+      "date": "2021-11-15 18:34",
+      "id": 24,
+      "newText": "13"
+    },
+    {
+      "text": "wtf?",
+      "checked": false,
+      "date": "2021-11-16 14:20",
+      "id": 25
+    },
+    {
+      "text": "1",
+      "checked": false,
+      "date": "2021-11-16 14:29",
+      "id": 26
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "name": "Саморазвитие"
+    },
+    {
+      "id": 2,
+      "name": "Работа"
+    },
+    {
+      "id": 3,
+      "name": "Дом"
+    }
+  ]
+}
