@@ -5,13 +5,6 @@ import InputCheckBox from "./components/InputCheckBox";
 import Item from "./components/Item";
 import { changeCategory } from "./components/reduxToolkit/categorySlice";
 import { useAddTaskAPIMutation, useChangeComplitedAPIMutation, useDeleteTaskAPIMutation, useGetAllTasksQuery, useEditTaskAPIMutation} from "./components/reduxToolkit/tasksAPI";
-import {
-  editTodo,
-  fetchToDos,
-  deleteToDo,
-  addToDo,
-  changeStatusToDO
-} from "./components/reduxToolkit/todoSlice";
 
 
 
@@ -58,8 +51,8 @@ function App() {
       return;
     }
      addTaskAPI({text: taskInput, checked: false, date: currentDate()}).unwrap()
-    .then((payload) => console.log('fulfilled', payload))
-    .catch((error) => console.error('rejected', error));
+    //.then((payload) => console.log('fulfilled', payload))
+    //.catch((error) => console.error('rejected', error));
 
 
     //dispatch(addToDo({ text: taskInput, checked: false, date: currentDate() }));

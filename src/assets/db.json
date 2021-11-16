@@ -20,7 +20,7 @@
     },
     {
       "text": "Create SPA with cart",
-      "checked": false,
+      "checked": true,
       "date": "2021-11-12 17:15",
       "id": 22
     },
@@ -30,6 +30,12 @@
       "date": "2021-11-15 18:34",
       "id": 24,
       "newText": "13"
+    },
+    {
+      "text": "wtf?",
+      "checked": false,
+      "date": "2021-11-16 14:20",
+      "id": 25
     }
   ],
   "lists": [
